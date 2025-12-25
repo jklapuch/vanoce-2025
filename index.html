@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vánoční přání 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #c41e3a;
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .greeting {
+            color: #333;
+            font-size: 1.3em;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .fish-section {
+            margin-top: 40px;
+        }
+
+        .fish-section h2 {
+            color: #2c5f2d;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .fish-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .fish-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .fish-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .fish-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+            border-radius: 10px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4em;
+        }
+
+        .fish-name {
+            color: #1976d2;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .freezer-note {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            color: #1565c0;
+        }
+
+        .snowflake {
+            color: #c41e3a;
+            font-size: 2em;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .greeting {
+                font-size: 1.1em;
+            }
+
+            .fish-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <span class="snowflake">❄️</span>
+            Veselé Vánoce 2025
+            <span class="snowflake">❄️</span>
+        </h1>
+        
+        <div class="greeting">
+            <p>Přejeme Vám krásné a klidné vánoční svátky plné radosti, lásky a pohody.</p>
+            <p>Ať je tento čas pro Vás a Vaše blízké kouzelný a nezapomenutelný!</p>
+        </div>
+
+        <div class="fish-section">
+            <h2>🐟 Naše rybí zásoby 🐟</h2>
+            
+            <div class="fish-grid">
+                <div class="fish-card">
+                    <div class="fish-image">🐟</div>
+                    <div class="fish-name">Tuňák</div>
+                    <p>Vynikající zdroj omega-3 mastných kyselin</p>
+                </div>
+
+                <div class="fish-card">
+                    <div class="fish-image">🐠</div>
+                    <div class="fish-name">Losos</div>
+                    <p>Bohatý na vitamíny a minerály</p>
+                </div>
+
+                <div class="fish-card">
+                    <div class="fish-image">🐟</div>
+                    <div class="fish-name">Pstruh</div>
+                    <p>Lahodná sladkovodní ryba</p>
+                </div>
+            </div>
+
+            <div class="freezer-note">
+                <strong>❄️ Důležitá informace:</strong> Všechny tyto ryby jsou bezpečně uloženy v mrazáku!
+            </div>
+        </div>
+    </div>
+</body>
+</html>

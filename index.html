@@ -41,10 +41,16 @@
 
         h1 {
             color: #0f172a;
-            font-size: 3.5em;
-            margin-bottom: 10px;
-            letter-spacing: -1px;
+            font-size: clamp(2.4em, 6vw, 3.5em);
+            margin-bottom: 14px;
+            letter-spacing: -0.5px;
             text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.35em;
+            flex-wrap: wrap;
+            text-align: center;
         }
 
         .greeting {
@@ -128,9 +134,11 @@
         }
 
         .snowflake {
-            color: #c41e3a;
-            font-size: 2em;
-            margin: 0 10px;
+            color: rgba(228, 34, 61, 0.8);
+            font-size: clamp(1.5em, 4vw, 2em);
+            line-height: 1;
+            margin: 0;
+            flex-shrink: 0;
         }
 
         @media (max-width: 768px) {
@@ -159,7 +167,7 @@
 
          @media (max-width: 600px) {
              h1 {
-                font-size: 2.2em;
+                font-size: 2em;
              }
 
              .greeting {
@@ -178,6 +186,9 @@
             .freezer-note {
                 flex-direction: column;
                 align-items: flex-start;
+            }
+            .snowflake {
+                display: none;
             }
          }
     </style>
